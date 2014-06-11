@@ -42,7 +42,7 @@ syn keyword pseucoPrimitiveStmt     join lock unlock waitForContition signal sig
 syn keyword pseucoAgent             mainagent
 
 syn match pseucoChannel             "(boolchan\|intchan\|stringchan)[0-9]*"
-syn match pseucoError               "(boolchan\|intchan\|stringchan)[^0-9]*"
+syn match pseucoError               "(boolchan\|intchan\|stringchan)[^0-9]+"
 
 syn region pseucoLabelRegion        transparent matchgroup=pseucoLabel start="\<case\>" matchgroup=NONE end=":" contains=pseucoNumber
 
