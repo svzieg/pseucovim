@@ -133,41 +133,42 @@ if version >= 508 || !exists("did_java_syn_inits")
   if version < 508
     let did_java_syn_inits = 1
   endif
-  pseucoHiLink pseucoBranch			Conditional
-  pseucoHiLink pseucoUserLabelRef		pseucoUserLabel
-  pseucoHiLink pseucoLabel			Label
-  pseucoHiLink pseucoUserLabel		Label
-  pseucoHiLink pseucoConditional		Conditional
-  pseucoHiLink pseucoLoop			Repeat
-  pseucoHiLink pseucoStorageClass		StorageClass
-  pseucoHiLink pseucoMethodDecl		pseucoStorageClass
-  pseucoHiLink pseucoClassDecl		pseucoStorageClass
-  pseucoHiLink pseucoScopeDecl		pseucoStorageClass
-  pseucoHiLink pseucoBoolean		Boolean
-  pseucoHiLink pseucoSpecial		Special
-  pseucoHiLink pseucoSpecialError		Error
-  pseucoHiLink pseucoSpecialCharError	Error
-  pseucoHiLink pseucoString			String
-  pseucoHiLink pseucoCharacter		Character
-  pseucoHiLink pseucoSpecialChar		SpecialChar
-  pseucoHiLink pseucoNumber			Number
-  pseucoHiLink pseucoError			Error
-  pseucoHiLink pseucoStringError		Error
-  pseucoHiLink pseucoStatement		Statement
-  pseucoHiLink pseucoComment		Comment
-  pseucoHiLink pseucoDocComment		Comment
-  pseucoHiLink pseucoLineComment		Comment
-  pseucoHiLink pseucoConstant		Constant
-  pseucoHiLink pseucoTodo			Todo
+  PseucoHiLink javaBraces			Function
+  PseucoHiLink pseucoBranch			Conditional
+  PseucoHiLink pseucoUserLabelRef		pseucoUserLabel
+  PseucoHiLink pseucoLabel			Label
+  PseucoHiLink pseucoUserLabel		Label
+  PseucoHiLink pseucoConditional		Conditional
+  PseucoHiLink pseucoLoop			Repeat
+  PseucoHiLink pseucoStorageClass		StorageClass
+  PseucoHiLink pseucoMethodDecl		pseucoStorageClass
+  PseucoHiLink pseucoClassDecl		pseucoStorageClass
+  PseucoHiLink pseucoScopeDecl		pseucoStorageClass
+  PseucoHiLink pseucoBoolean		Boolean
+  PseucoHiLink pseucoSpecial		Special
+  PseucoHiLink pseucoSpecialError		Error
+  PseucoHiLink pseucoSpecialCharError	Error
+  PseucoHiLink pseucoString			String
+  PseucoHiLink pseucoCharacter		Character
+  PseucoHiLink pseucoSpecialChar		SpecialChar
+  PseucoHiLink pseucoNumber			Number
+  PseucoHiLink pseucoError			Error
+  PseucoHiLink pseucoStringError		Error
+  PseucoHiLink pseucoStatement		Statement
+  PseucoHiLink pseucoComment		Comment
+  PseucoHiLink pseucoDocComment		Comment
+  PseucoHiLink pseucoLineComment		Comment
+  PseucoHiLink pseucoConstant		Constant
+  PseucoHiLink pseucoTodo			Todo
 
-  pseucoHiLink pseucoCommentTitle		SpecialComment
-  pseucoHiLink pseucoDocTags		Special
-  pseucoHiLink pseucoDocParam		Function
-  pseucoHiLink pseucoDocSeeTagParam		Function
-  pseucoHiLink pseucoCommentStar		pseucoComment
+  PseucoHiLink pseucoCommentTitle		SpecialComment
+  PseucoHiLink pseucoDocTags		Special
+  PseucoHiLink pseucoDocParam		Function
+  PseucoHiLink pseucoDocSeeTagParam		Function
+  PseucoHiLink pseucoCommentStar		pseucoComment
 
-  pseucoHiLink pseucoType			Type
-  pseucoHiLink pseucoExternal		Include
+  PseucoHiLink pseucoType			Type
+  PseucoHiLink pseucoExternal		Include
 endif
 
 delcommand PseucoHiLink
