@@ -41,9 +41,9 @@ syn keyword pseucoExpression        println
 syn keyword pseucoPrimitiveStmt     join lock unlock waitForContition signal signalAll return
 syn keyword pseucoAgent             mainagent
 
-syn match pseucoChannel             "\<boolchan\[0-9]*"
-syn match pseucoChannel             "\<intchan\[0-9]*"
-syn match pseucoChannel             "\<stringchan\[0-9]*"
+syn match pseucoChannel             "boolchan[0-9]"
+syn match pseucoChannel             "intchan"
+syn match pseucoChannel             "stringchan[0-9]*"
 
 syn region pseucoLabelRegion        transparent matchgroup=pseucoLabel start="\<case\>" matchgroup=NONE end=":" contains=pseucoNumber
 
