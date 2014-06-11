@@ -168,6 +168,7 @@ if version >= 508 || !exists("did_java_syn_inits")
   PseucoHiLink pseucoCommentStar		pseucoComment
 
   PseucoHiLink pseucoType			Type
+  PseucoHiLink pseucoChannel			Type
   PseucoHiLink pseucoExternal		Include
 endif
 
