@@ -41,8 +41,7 @@ syn keyword pseucoExpression        println
 syn keyword pseucoPrimitiveStmt     join lock unlock waitForContition signal signalAll return
 syn keyword pseucoAgent             mainagent
 
-syn match pseucoChannel             "\<\(boolchan\|intchan\|stringchan\)\>[0-9]*"
-"FIXME: syn match pseucoError               "(boolchan\|intchan\|stringchan)\D+"
+syn match pseucoChannel             "\<\(boolchan\|intchan\|stringchan\)[0-9]*\>"
 
 syn region pseucoLabelRegion        transparent matchgroup=pseucoLabel start="\<case\>" matchgroup=NONE end=":" contains=pseucoNumber
 
@@ -134,15 +133,10 @@ if version >= 508 || !exists("did_java_syn_inits")
   endif
   PseucoHiLink javaBraces			Function
   PseucoHiLink pseucoBranch			Conditional
-  PseucoHiLink pseucoUserLabelRef		pseucoUserLabel
   PseucoHiLink pseucoLabel			Label
-  PseucoHiLink pseucoUserLabel		Label
   PseucoHiLink pseucoConditional		Conditional
   PseucoHiLink pseucoLoop			Repeat
-  PseucoHiLink pseucoStorageClass		StorageClass
-  PseucoHiLink pseucoMethodDecl		pseucoStorageClass
-  PseucoHiLink pseucoClassDecl		pseucoStorageClass
-  PseucoHiLink pseucoScopeDecl		pseucoStorageClass
+  PseucoHiLink pseucoAgent              StorageClass
   PseucoHiLink pseucoBoolean		Boolean
   PseucoHiLink pseucoSpecial		Special
   PseucoHiLink pseucoSpecialError		Error
