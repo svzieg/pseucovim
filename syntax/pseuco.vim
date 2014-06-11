@@ -75,7 +75,6 @@ syn cluster pseucoTop add=pseucoComment,pseucoLineComment
 if !exists("pseuco_ignore_pseucodoc") && main_syntax != 'jsp'
   syntax case ignore
   " syntax coloring for pseucodoc comments (HTML)
-  syntax include @pseucoHtml <sfile>:p:h/html.vim
   unlet b:current_syntax
   " HTML enables spell checking for all text that is not in a syntax item. This
   " is wrong for pseuco (all identifiers would be spell-checked), so it's undone
@@ -139,7 +138,6 @@ if version >= 508 || !exists("did_java_syn_inits")
   if version < 508
     let did_java_syn_inits = 1
   endif
-  pseucoHiLink pseucoBraces			Function
   pseucoHiLink pseucoBranch			Conditional
   pseucoHiLink pseucoUserLabelRef		pseucoUserLabel
   pseucoHiLink pseucoLabel			Label
