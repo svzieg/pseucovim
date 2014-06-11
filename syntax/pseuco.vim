@@ -74,11 +74,6 @@ syn cluster pseucoTop add=pseucoComment,pseucoLineComment
 "
 if !exists("pseuco_ignore_pseucodoc") && main_syntax != 'jsp'
   syntax case ignore
-  " syntax coloring for pseucodoc comments (HTML)
-  unlet b:current_syntax
-  " HTML enables spell checking for all text that is not in a syntax item. This
-  " is wrong for pseuco (all identifiers would be spell-checked), so it's undone
-  " here.
   syntax spell default
 
   syn region  pseucoDocComment	start="/\*\*"  end="\*/" keepend contains=pseucoCommentTitle,@pseucoHtml,pseucoDocTags,pseucoDocSeeTag,pseucoTodo,@Spell
