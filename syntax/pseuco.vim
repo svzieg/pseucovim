@@ -127,9 +127,9 @@ PseucoHiLink pseucoParenError	pseucoError
 
 
 " The default highlighting.
-if version >= 508 || !exists("did_java_syn_inits")
+if version >= 508 || !exists("did_pseuco_syn_inits")
   if version < 508
-    let did_java_syn_inits = 1
+    let did_pseuco_syn_inits = 1
   endif
   PseucoHiLink javaBraces			Function
   PseucoHiLink pseucoBranch			Conditional
