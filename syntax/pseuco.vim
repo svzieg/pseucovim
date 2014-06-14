@@ -35,7 +35,7 @@ syn keyword pseucoLabel             default
 syn keyword pseucoBoolean           true false
 syn keyword pseucoConstant          null
 syn keyword pseucoLoop              while for do
-syn keyword pseucoType              boolean int string agent mutex void
+syn keyword pseucoType              bool int string agent mutex void
 syn keyword pseucoBranch            break continue 
 syn keyword pseucoExpression        println
 syn keyword pseucoPrimitiveStmt     join lock unlock waitForContition signal signalAll return
@@ -148,6 +148,7 @@ if version >= 508 || !exists("did_java_syn_inits")
   PseucoHiLink pseucoError			Error
   PseucoHiLink pseucoStringError		Error
   PseucoHiLink pseucoStatement		Statement
+  PseucoHiLink pseucoPrimitiveStmt      Statement
   PseucoHiLink pseucoComment		Comment
   PseucoHiLink pseucoDocComment		Comment
   PseucoHiLink pseucoLineComment		Comment
