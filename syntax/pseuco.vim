@@ -39,13 +39,13 @@ syn keyword pseucoType              bool int string agent mutex void
 syn keyword pseucoBranch            break continue 
 syn keyword pseucoExpression        println
 syn keyword pseucoPrimitiveStmt     join lock unlock waitForContition signal signalAll return
-syn keyword pseucoAgent             mainagent
+syn keyword pseucoAgent             mainAgent
 
 syn match pseucoChannel             "\<\(boolchan\|intchan\|stringchan\)[0-9]*\>"
 
 syn region pseucoLabelRegion        transparent matchgroup=pseucoLabel start="\<case\>" matchgroup=NONE end=":" contains=pseucoNumber
 
-syn cluster pseucoTop add=pseucoExternals,pseucoConditional,pseucoLabel,pseucoBranch,pseucoBoolean,pseucoType,pseucoLoop,pseucoExpression,pseucoPrimitiveStmt,pseucoAgent,pseicoChannel,pseucoLabelRegion
+syn cluster pseucoTop add=pseucoExternals,pseucoConditional,pseucoLabel,pseucoBranch,pseucoBoolean,pseucoType,pseucoLoop,pseucoExpression,pseucoPrimitiveStmt,pseucoAgent,pseucoChannel,pseucoLabelRegion
 
 "Comments
 syn keyword pseucoTodo		 contained TODO FIXME XXX
