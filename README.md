@@ -8,7 +8,7 @@ You can download the PseuCo Compiler at:  http://pseuco.de/downloads/Tools/PseuC
 
 ###About pseucovim
 
-pseucovim is a plugin for Vim that support PseuCo-Syntaxhighlining, and a compile-Command. There's no autocompletion so far but I'm hanging on it ;) so please be patient.
+pseucovim is a plugin for Vim that support PseuCo-Syntaxhighlining (in all .pseuco files) , and a compile-Command. There's no autocompletion so far but I'm hanging on it ;) so please be patient.
 
 ###Compiler Options
 
@@ -23,6 +23,9 @@ If you use the Compiler I mensioned before you just have to add:
 in your vimrc
 
 
+Now you can compile and run your .pseuco File with
+
+    :PseuCoCompileAndRun
 
 ####Feedback and Issues
 If you have found any issus or missing a function use the bugtracker of github ;)
