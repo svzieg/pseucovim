@@ -4,10 +4,10 @@ if !exists("g:pseuco_command")
 endif
 
 
-function! PseucoCompileAndRun()
+function! PseuCoCompileAndRun()
     silent !clear
     execute "!" . g:pseuco_command . " -i " . fnamemodify(bufname("%"),":p")
 endfunction
 
 "Define the Commands
-command! PseucoCompileAndRun :call PseucoCompileAndRun()
+command! PseuCoCompileAndRun :call PseuCoCompileAndRun()
