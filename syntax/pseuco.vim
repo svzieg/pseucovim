@@ -35,13 +35,13 @@ syn keyword pseucoLabel             default
 syn keyword pseucoBoolean           true false
 syn keyword pseucoConstant          null
 syn keyword pseucoLoop              while for do
-syn keyword pseucoType              bool int string agent mutex void
+syn keyword pseucoType              bool int string agent mutex void monitor struct
 syn keyword pseucoBranch            break continue 
 syn keyword pseucoExpression        println
-syn keyword pseucoPrimitiveStmt     join lock unlock waitForContition signal signalAll return
+syn keyword pseucoPrimitiveStmt     join lock unlock waitForContition signal signalAll return condition
 syn keyword pseucoAgent             mainAgent
 
-syn match pseucoChannel             "\<\(boolchan\|intchan\|stringchan\)[0-9]*\>"
+syn match pseucoChannel             "\<[A-Za-z]+chan[0-9]*\>"
 
 syn region pseucoLabelRegion        transparent matchgroup=pseucoLabel start="\<case\>" matchgroup=NONE end=":" contains=pseucoNumber
 
